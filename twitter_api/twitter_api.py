@@ -6,10 +6,10 @@ class TwitterAPI:
     def __init__(self):
         # self.api_key = config('TWITTER_API_SECRET')
         self.api_key = 'sVgstwrdGQm2PQXSir9KaOkYP'
-        self.api_secret = config('TWITTER_API_SECRET')
-        self.client_id = config('TWITTER_CLIENT_ID')
-        self.client_secret = config('TWITTER_CLIENT_SECRET')
-        self.oauth_callback_url = config('TWITTER_OAUTH_CALLBACK_URL')
+        self.api_secret = 'iOAhAFHK8r84KvjA9MFiFgAeAM8hB3gjJuxnil3dDeMVV1kA4l'
+        self.client_id = 'YUJtUmx2TGtWUnJHRGdxUFotOW46MTpjaQ'
+        self.client_secret = '7Bj9_LwAkVFVT66HgzttmBPo2_OZln5svYkCt5ytkkOfO6XLg5'
+        self.oauth_callback_url = 'https://researchnortheastern-f0da7b5714f0.herokuapp.com/'
 
     def twitter_login(self):
         oauth1_user_handler = tweepy.OAuthHandler(self.api_key, self.api_secret, callback=self.oauth_callback_url)
