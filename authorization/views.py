@@ -68,9 +68,13 @@ def twitter_callback(request):
 @twitter_login_required
 def index(request):
     return render(request, 'authorization/home.html')
+    
+    
 
 
 @login_required
 def twitter_logout(request):
     logout(request)
     return redirect('index')
+
+
