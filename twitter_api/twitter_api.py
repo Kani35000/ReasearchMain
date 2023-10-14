@@ -4,6 +4,7 @@ from decouple import config
 
 class TwitterAPI:
     def __init__(self):
+        # self.api_key = config('TWITTER_API_SECRET')
         self.api_key = 'sVgstwrdGQm2PQXSir9KaOkYP'
         self.api_secret = config('TWITTER_API_SECRET')
         self.client_id = config('TWITTER_CLIENT_ID')
