@@ -78,3 +78,6 @@ def twitter_logout(request):
     return redirect('index')
 
 
+def home(request):
+    logout(request)
+    return render(request, 'mainhome.html')
