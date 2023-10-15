@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 
+import django_heroku
+import dj_database_url
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -77,17 +80,26 @@ LOGIN_URL = '/authorization/twitter_login/'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'portfolio',
+#         'USER': 'kani',
+#         'PASSWORD': 'TDjakes35' ,
+#         'HOST': 'localhost',
+#         'PORT':'5432'
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'portfolio',
-        'USER': 'kani',
-        'PASSWORD': 'TDjakes35' ,
-        'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd2qj9k8kra7i3f',
+        'USER': 'uxfvvzdzmxpesh',
+        'PASSWORD': '32e7b67f691e34231836c2ef1cbc0d70db1ec0abad85f1d0e6f62775f2770403' ,
+        'HOST': 'ec2-34-236-103-63.compute-1.amazonaws.com',
         'PORT':'5432'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
